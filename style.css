@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #bbb;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #51adf6;
+    padding: 19px 150px;
+    font-family: "Poppins",sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+}
+.nav-logo{
+    display: flex;
+    font-family: "Pacifico",cursive;
+    border: solid 3px black;
+    padding: 1px 4px;
+    border-radius: 43px;
+    background-color: white;
+}
+.nav-logo p{
+    font-size: 30px;
+    color: rgb(11, 209, 244);
+}
+.nav-logo span{
+    font-size: 30px;
+    color: black;
+}
+.nav-menu ul{
+    font-size: 19px;
+    display: flex;
+    gap: 90px;
+}
+.nav-menu ul li{
+    list-style-type: none;
+    /*    background: white;
+    padding: 10px 20px;
+    border: solid 1px #a59a9a;
+    border-radius: 33px;
+}*/
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.resume{
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 13px 11px;
+    border-radius: 25px;
+    background-color: rgb(252, 241, 227);
+}
+.seperator{
+    padding: 3px;
+    background: #48e4ffb3;
+}
+.content{
+    padding-inline: 10vw;
+}
+.content-box{
+    position: relative;
+    display: flex;
+    height: 75vh;
+
+} 
+.content-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20px;
+}
+.name{
+    width: fit-content;
+    font-family: 'Pacifico';
+    background-color: #ff4848;
+    color: white;
+    padding: 4px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.featured-text{
+    font-family: "Anton SC",sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+    margin-block: 20px;
+}
+#type-effect{
+    font-family: "Bebas neue",sans-serif;
+    font-size: 62px;
+}
+.designer{
+    color: #00e0ff;
+}
+.developer{
+    color: #f7b200;
+}
+.programmer{
+    color: #3fff00;
+}
+.featured-text-info{
+    font-size: 15px;
+    margin-bottom: 30px;
+    font-family: "Poppins",sans-serif;
+}
+.social{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 19px 3px;
+    gap: 40px;
+
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    background-color: beige;
+}
+.profile-pic{
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    min-height: 80vh;
+    width: 50%;
+}
+.image{
+    border: solid 4px #84d4ff;
+    margin: auto 0;
+    width: 380px;
+    height: 380px;
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+}
+.image img{
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+}
+@keyframes imgFloat {
+    50%{
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+.scroll-indicator{
+    display: flex;
+    justify-content: center;
+}
+.scroll-button{
+    position: relative;
+    padding: 11px 16px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+.mouse{
+    width: 25px;
+    height: 40px;
+    border: 3px solid rgb(63, 223, 248);
+    border-radius: 48px;
+}
+.mouse::before{
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 11px;
+    background-color: rgb(4, 77, 116);
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    animation: scroll 2s infinite;
+}
+@keyframes scroll{
+    from{
+        opacity: 1;
+        top: 18px;
+    }
+    to{
+        opacity: 0;
+        top: 38px;
+    }
+
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+}
+.skills-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    min-height: 24vh;
+    gap: 15px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);
+    margin-bottom: 3vh;
+}
+.skills-heading h4{
+    font-family: "Bebas neue", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.skills-heading p{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    padding: 0 7vh;
+    font-weight: 300;
+}
+.skills-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.frontend,.design,.programming{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);
+    margin-bottom: 3vh;
+}
+.skills-info-heading{
+    margin-top: 3vh;
+    font-family: "Bebas neue", sans-serif;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+.skills-info-description{
+    padding: 0px 27px 15px 27px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+.skills-img{
+    display: flex;
+    margin-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);
+    padding: 1vh 13vh;
+}
+
